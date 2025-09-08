@@ -53,7 +53,7 @@ export default function Example() {
                 ))}
               </div>
             </div>
-            <div className='pt-2'>
+            <div className='pt-2 '>
             <Button className='flex border-1  h-12 justify-center items-center p-2 gray-200 rounded-xl hover:pointer'>
       <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
         <FaWhatsapp className="text-green-400 w-8 h-8 mx-2" />
