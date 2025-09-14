@@ -26,7 +26,7 @@ export default function AppointmentCard({ title }: AppointmentCardProps) {
   };
 
   return (
-    <div className="mt-12  p-4 bg-cyan-600 rounded-xl  shadow-lg shadow-black">
+    <div className="mt-12  p-4 bg-[#0f2b33] rounded-xl  shadow-lg shadow-black">
       <div className="max-w-sm  overflow-hidden">
         <p className="text-2xl pr-8 text-white font-bold">{title}</p>
         <form
@@ -36,7 +36,7 @@ export default function AppointmentCard({ title }: AppointmentCardProps) {
           <input
             type="text"
             name="name"
-            placeholder="Your Name"
+            placeholder="Your Name*"
             value={formData.name}
             onChange={handleChange}
             className="p-2 bg-white rounded-2xl"
@@ -46,7 +46,7 @@ export default function AppointmentCard({ title }: AppointmentCardProps) {
           <input
             type="email"
             name="email"
-            placeholder="Your Email"
+            placeholder="Your Email*"
             value={formData.email}
             onChange={handleChange}
             className="p-2 bg-white rounded-2xl"
@@ -55,7 +55,7 @@ export default function AppointmentCard({ title }: AppointmentCardProps) {
 
           <textarea
             name="message"
-            placeholder="Your Message"
+            placeholder="Your Message*"
             value={formData.message}
             onChange={handleChange}
             className="p-2 bg-white rounded-2xl"

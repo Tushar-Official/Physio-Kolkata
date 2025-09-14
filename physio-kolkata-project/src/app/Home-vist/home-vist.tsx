@@ -5,8 +5,8 @@ export default function HomeVistCard(){
     return(<>
     <div className=" p-16 bg-indigo-100 ">
         <div className="flex flex-col justify-center gap-y-4 items-center p-12">
-            <p className="text-4xl font-bold">We also have HomeVisit Facility</p>
-             <p className="text-4xl font-bold">Please fill below form and we will arrange a Physiotherapist at Home for You</p>
+            <h2 className="text-4xl font-bold">We also have HomeVisit Facility</h2>
+             <h2 className="text-4xl font-bold">Please fill below form and we will arrange a Physiotherapist at Home for You</h2>
         </div>
         <div className="flex items-center justify-between px-24 gap-12 w-full">
   {/* Left: Image */}

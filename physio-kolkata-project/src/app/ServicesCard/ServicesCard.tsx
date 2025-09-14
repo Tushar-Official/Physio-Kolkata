@@ -6,14 +6,14 @@ export const ServicesCard=()=>{
   {servicesData.items.map((item) => (
     <div
       key={item.id}
-      className="w-56 h-60 rounded border-1 bg-gray-100  border-gray-300 shadow-lg flex flex-col justify-center items-center p-2"
+      className="w-56 h-60 rounded  bg-gray-100  border-gray-300 shadow-lg flex flex-col justify-center items-center p-2"
     >
       <Image
         className="w-16 h-16 mb-4"
         src={item.image}
         alt={item.title}
-        width={64}
-        height={64}
+        width={68}
+        height={68}
       />
       <div className="px-2 py-1 ">
         <div className="font-bold text-md mb-2">{item.title}</div>

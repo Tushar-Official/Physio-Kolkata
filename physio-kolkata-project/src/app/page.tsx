@@ -3,6 +3,7 @@ import TopSectionContent from "./top-section";
 import ServicesCardSection from "./services-section/services-section";
 import { Gallery } from "./Gallery/gallery";
 import WhoAreWe from "./WhoAreWe";
+import { Footer } from "./footer/footer";
 export default function Home() {
   return (
     <div className=" flex flex-col">
@@ -11,6 +12,7 @@ export default function Home() {
       <ServicesCardSection />
       <WhoAreWe />
       <Gallery />
+      <Footer />
     </div>
   );
 }
