@@ -33,6 +33,38 @@ export const Gallery = () => {
         <span className="text-white font-semibold"> medical excellence.</span>
       </motion.p>
       </div>
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 justify-items-center">
+  {visibleMedia.map((item: {
+    id: number;
+    type: string;
+    src: string;
+}) => (
+    <motion.div
+      key={item.id}
+      layout
+      initial={{ opacity: 0, scale: 0.9 }}
+      animate={{ opacity: 1, scale: 1 }}
+      exit={{ opacity: 0, scale: 0.9 }}
+      transition={{ duration: 0.4, ease: "easeInOut" }}
+      className="relative max-w-[200px] w-full aspect-square flex items-center justify-center bg-gray-100 rounded-lg shadow-md"
+    >
+      {item.type === "image" ? (
+        <Image
+          src={item.src}
+          alt={`Gallery ${item.id}`}
+          fill
+          className="object-contain p-2 rounded-lg"
+        />
+      ) : (
+        <video
+          src={item.src}
+          controls
+          className="w-full h-full object-contain rounded-lg"
+        />
+      )}
+    </motion.div>
+  ))}
+</div>
 
       {/* Masonry Layout */}
       <Masonry
