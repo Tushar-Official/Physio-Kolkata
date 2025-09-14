@@ -19,7 +19,7 @@ function classNames(...classes:any) {
 
 export default function Example() {
   return (
-    <Disclosure as="nav" className="relative h-28  justify-center items-center pt-6 bg-cyan-600">
+    <Disclosure as="nav" className="relative h-28  justify-center items-center pt-6 bg-[#0f2b33]">
       <div className="mx-auto max-w-full justify-center px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">

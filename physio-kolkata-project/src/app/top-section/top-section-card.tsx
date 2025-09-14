@@ -23,7 +23,7 @@ export default function TopSectionCard(){
   <div className="flex justify-center pt-12 items-center">
     <p className="text-4xl font-bold">Visit our centers in Kolkata...</p>
   </div>
-  <div className="flex justify-around ">
+  <div className="flex justify-evenly  ">
         <AppointmentCard title="Make an Appointment for Ballygunge" />
         <AppointmentCard title="Make an Appointment for SaltLake" />
     </div>
