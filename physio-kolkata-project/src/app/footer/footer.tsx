@@ -18,12 +18,17 @@ export const Footer = () => {
   ];
 
   return (
-    <footer className="bg-[#0f2b33] text-gray-300">
+    <footer className="bg-eagle-green-950 text-gray-300">
       <div className="max-w-7xl mx-auto px-6 py-10 grid md:grid-cols-3 gap-10">
         {/* Left Section */}
         <div>
           <div className="flex items-center gap-4">
-            <Image src={logo} alt="Physio Kolkata Logo" width={60} height={60} />
+            <Image
+              src={logo}
+              alt="Physio Kolkata Logo"
+              width={60}
+              height={60}
+            />
             <div>
               <h4 className="text-lg font-semibold">Physio Kolkata</h4>
               <p className="text-sm text-gray-400 mt-1">

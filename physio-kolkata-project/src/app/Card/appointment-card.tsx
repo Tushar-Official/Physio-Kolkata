@@ -26,7 +26,7 @@ export default function AppointmentCard({ title }: AppointmentCardProps) {
   };
 
   return (
-    <div className="mt-12  p-4 bg-[#0f2b33] rounded-xl  shadow-lg shadow-black">
+    <div className="mt-12  p-4 bg-eagle-green-950 rounded-xl  shadow-lg shadow-black">
       <div className="max-w-sm  overflow-hidden">
         <p className="text-2xl pr-8 text-white font-bold">{title}</p>
         <form
