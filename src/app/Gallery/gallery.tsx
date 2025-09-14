@@ -18,7 +18,11 @@ const visibleMedia = showAll ? galleryData : galleryData.slice(0, initialCount);
         <p className='text-4xl text-black font-bold'>Gallery</p>
       </div>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 justify-items-center">
-  {visibleMedia.map((item: any) => (
+  {visibleMedia.map((item: {
+    id: number;
+    type: string;
+    src: string;
+}) => (
     <motion.div
       key={item.id}
       layout
