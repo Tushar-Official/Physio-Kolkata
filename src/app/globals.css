@@ -2,6 +2,8 @@
 
 @theme {
   --color-eagle-green-950: oklch(0.4278 0.0732 207.92);
+  --color-eagle-green-500: oklch(0.4225 0.0959 204.01 / 50%);
+  --color-eagle-green-100: oklch(0.4225 0.0959 204.01 / 10%);
 }
 
 body {
@@ -12,18 +14,22 @@ body {
   font-family: "Inria Serif", serif;
   font-weight: 300;
   font-style: normal;
+  line-height: 19px;
+
 }
 
 .inria-serif-regular {
   font-family: "Inria Serif", serif;
   font-weight: 400;
   font-style: normal;
+  line-height: 19px;
 }
 
 .inria-serif-bold {
   font-family: "Inria Serif", serif;
   font-weight: 700;
   font-style: normal;
+  line-height: 43px;
 }
 
 .inria-serif-light-italic {
@@ -42,4 +48,21 @@ body {
   font-family: "Inria Serif", serif;
   font-weight: 700;
   font-style: italic;
+}
+
+.department-card-gradiant {
+  background: #00000000;
+  background: -webkit-linear-gradient(180deg, #00000000 0%, #015A641A 19%, #015A64FF 100%);
+  background: -moz-linear-gradient(180deg, #00000000 0%, #015A641A 19%, #015A64FF 100%);
+  background: linear-gradient(180deg, #00000000 0%, #015A641A 19%, #015A64FF 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00000000", endColorstr="#015A64FF", GradientType=0);
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }
