@@ -117,8 +117,8 @@ const OurDepartment = () => {
       </div>
       <div className="flex flex-row w-full overflow-y-scroll hide-scrollbar">
         <div className="flex flex-row pb-5">
-          {DepertmentDetails.map((item) => (
-            <Card {...item} />
+          {DepertmentDetails.map((item, index) => (
+            <Card key={index} {...item} />
           ))}
         </div>
       </div>
