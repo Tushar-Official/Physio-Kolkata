@@ -21,6 +21,4 @@ export const galleryData = [
   { id: 20, type: "image", src: "/galleryImages/old_wormenKnee.jpeg" },
   { id: 21, type: "image", src: "/galleryImages/pressure_doc.jpeg" },
   { id: 22, type: "image", src: "/galleryImages/pressure_doc2.jpeg" },
-  { id: 23, type: "image", src: "/galleryImages/taping.jpeg" },
-  { id: 24, type: "image", src: "/galleryImages/tool.jpeg" },
 ];

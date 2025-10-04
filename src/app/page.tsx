@@ -21,10 +21,11 @@ export default function Home() {
       <OurDepartment />
       <Partner />
       <OurSpecialists />
+       <OurLocation />
       <Gallery />
 
       <FeedbackForm/>
-      <OurLocation />
+     
 
       <Footer />
     </div>

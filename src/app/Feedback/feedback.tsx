@@ -21,20 +21,18 @@ export const FeedbackForm = () => {
   };
 
   return (
-    <div className="p-6 bg-gradient-to-b from-eagle-green-950 to-eagle-green-800 min-h-[80vh] flex flex-col items-center justify-center">
+    <div className="p-6 to-eagle-green-800 min-h-[80vh] flex flex-col items-center justify-center">
       
       {/* New Heading Section */}
       <motion.p
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="text-xl md:text-2xl text-white/90 max-w-3xl text-center leading-relaxed mb-10 font-serif"
-      >
-        Explore our gallery showcasing 
-        <span className="text-white font-semibold"> state-of-the-art facilities, </span>
-        patient care, and 
-        <span className="text-white font-semibold"> medical excellence.</span>
-      </motion.p>
+  initial={{ opacity: 0, y: -20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6 }}
+  className="text-3xl text-black/90 whitespace-nowrap text-center leading-relaxed mb-10 font-serif"
+>
+  Please fill the feedback form
+ 
+</motion.p>
 
       {/* Feedback Form */}
       <motion.form
@@ -42,11 +40,11 @@ export const FeedbackForm = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.4 }}
         onSubmit={handleSubmit}
-        className="bg-white shadow-lg rounded-2xl p-8 w-full max-w-lg"
+        className="bg-eagle-green-950 shadow-lg rounded-2xl p-8 w-full max-w-lg"
       >
         {/* Name */}
         <div className="mb-4">
-          <label htmlFor="name" className="block text-gray-700 font-semibold mb-2">
+          <label htmlFor="name" className="block text-white font-semibold mb-2">
             Name
           </label>
           <input
@@ -56,13 +54,13 @@ export const FeedbackForm = () => {
             value={formData.name}
             onChange={handleChange}
             required
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-eagle-green-600"
+            className="w-full px-4 py-2 border bg-white border-gray-300 rounded-lg focus:outline-none focus:border-eagle-green-600"
           />
         </div>
 
         {/* Email */}
         <div className="mb-4">
-          <label htmlFor="email" className="block text-gray-700 font-semibold mb-2">
+          <label htmlFor="email" className="block text-white font-semibold mb-2">
             Email
           </label>
           <input
@@ -72,13 +70,13 @@ export const FeedbackForm = () => {
             value={formData.email}
             onChange={handleChange}
             required
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-eagle-green-600"
+            className="w-full px-4 py-2 border border-gray-300 bg-white rounded-lg focus:outline-none focus:border-eagle-green-600"
           />
         </div>
 
         {/* Feedback */}
         <div className="mb-6">
-          <label htmlFor="feedback" className="block text-gray-700 font-semibold mb-2">
+          <label htmlFor="feedback" className="block text-white font-semibold mb-2">
             Your Feedback
           </label>
           <textarea
@@ -88,7 +86,7 @@ export const FeedbackForm = () => {
             value={formData.feedback}
             onChange={handleChange}
             required
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-eagle-green-600"
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg bg-white focus:outline-none focus:border-eagle-green-600"
           ></textarea>
         </div>
 
@@ -97,7 +95,7 @@ export const FeedbackForm = () => {
           whileTap={{ scale: 0.95 }}
           whileHover={{ scale: 1.05 }}
           type="submit"
-          className="w-full py-2 bg-cyan-400  text-black font-semibold rounded-lg shadow-md"
+          className="w-full py-2 bg-blue-600  text-black font-semibold rounded-lg shadow-md"
         >
           Submit Feedback
         </motion.button>

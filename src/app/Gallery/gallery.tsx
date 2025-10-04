@@ -19,15 +19,25 @@ export const Gallery = () => {
   };
 
   return (
-   <div className="p-6 bg-gradient-to-b from-eagle-green-950 to-eagle-green-800">
+    <div className="p-6 bg-eagle-green-950">
       <div className="pt-12 pb-12 flex justify-center">
-        <p className="text-5xl text-white font-bold">Gallery</p>
+        <motion.p
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="text-2xl md:text-2xl text-white/90 max-w-3xl text-center leading-relaxed mb-10 font-serif"
+      >
+        Explore our gallery showcasing 
+        <span className="text-white font-semibold"> state-of-the-art facilities, </span>
+        patient care, and 
+        <span className="text-white font-semibold"> medical excellence.</span>
+      </motion.p>
       </div>
 
       {/* Masonry Layout */}
       <Masonry
         breakpointCols={breakpointColumns}
-        className="flex w-auto gap-6 "
+        className="flex w-auto gap-6"
         columnClassName="bg-clip-padding"
       >
         {visibleMedia.map((item: any) => (
