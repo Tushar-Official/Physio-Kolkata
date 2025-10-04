@@ -1,3 +1,5 @@
+"use client";
+
 import Example from "./header/header";
 import TopSectionContent from "./top-section";
 import ServicesCardSection from "./services-section/services-section";
@@ -6,6 +8,9 @@ import WhoAreWe from "./WhoAreWe";
 import { Footer } from "./footer/footer";
 import OurDepartment from "./OurDepartment";
 import { FeedbackForm } from "./Feedback/feedback";
+import OurLocation from "./OurLocation";
+import OurSpecialists from "./OurSpecialists";
+import Partner from "./Partner";
 export default function Home() {
   return (
     <div className=" flex flex-col">
@@ -14,8 +19,13 @@ export default function Home() {
       <ServicesCardSection />
       <WhoAreWe />
       <OurDepartment />
+      <Partner />
+      <OurSpecialists />
       <Gallery />
+
       <FeedbackForm/>
+      <OurLocation />
+
       <Footer />
     </div>
   );
