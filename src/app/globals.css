@@ -4,6 +4,7 @@
   --color-eagle-green-950: oklch(0.4278 0.0732 207.92);
   --color-eagle-green-500: oklch(0.4225 0.0959 204.01 / 50%);
   --color-eagle-green-100: oklch(0.4225 0.0959 204.01 / 10%);
+  --color-pale-robin-egg-blue-950: oklch(0.8508 0.1177 186.75);
 }
 
 body {
