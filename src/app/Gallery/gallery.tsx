@@ -1,51 +1,61 @@
 "use client";
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import Image from "next/image";
+import Masonry from "react-masonry-css";
 import { galleryData } from "../utils/contentJsonFiles/galleryJson";
 
 export const Gallery = () => {
   const [showAll, setShowAll] = useState(false);
 
-  const itemsPerRow = 4; // same as md:grid-cols-4
-const initialCount = itemsPerRow * 2; // show 8 items by default (2 full rows)
+  const itemsPerRow = 8; // show 8 items by default
+  const visibleMedia = showAll ? galleryData : galleryData.slice(0, itemsPerRow);
 
-const visibleMedia = showAll ? galleryData : galleryData.slice(0, initialCount);
+  const breakpointColumns = {
+    default: 4,
+    1100: 3,
+    700: 2,
+    500: 1,
+  };
 
   return (
-    <div className="p-6">
-          <div className=' pt-12 pb-12 flex justify-center items center '>
-        <p className='text-4xl text-black font-bold'>Gallery</p>
+   <div className="p-6 bg-gradient-to-b from-eagle-green-950 to-eagle-green-800">
+      <div className="pt-12 pb-12 flex justify-center">
+        <p className="text-5xl text-white font-bold">Gallery</p>
       </div>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 justify-items-center">
-  {visibleMedia.map((item: any) => (
-    <motion.div
-      key={item.id}
-      layout
-      initial={{ opacity: 0, scale: 0.9 }}
-      animate={{ opacity: 1, scale: 1 }}
-      exit={{ opacity: 0, scale: 0.9 }}
-      transition={{ duration: 0.4, ease: "easeInOut" }}
-      className="relative max-w-[200px] w-full aspect-square flex items-center justify-center bg-gray-100 rounded-lg shadow-md"
-    >
-      {item.type === "image" ? (
-        <Image
-          src={item.src}
-          alt={`Gallery ${item.id}`}
-          fill
-          className="object-contain p-2 rounded-lg"
-        />
-      ) : (
-        <video
-          src={item.src}
-          controls
-          className="w-full h-full object-contain rounded-lg"
-        />
-      )}
-    </motion.div>
-  ))}
-</div>
 
+      {/* Masonry Layout */}
+      <Masonry
+        breakpointCols={breakpointColumns}
+        className="flex w-auto gap-6 "
+        columnClassName="bg-clip-padding"
+      >
+        {visibleMedia.map((item: any) => (
+          <motion.div
+            key={item.id}
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            className="mb-6 relative rounded-lg shadow-lg overflow-hidden bg-white"
+          >
+            {item.type === "image" ? (
+              <Image
+                src={item.src}
+                alt={`Gallery ${item.id}`}
+                width={400}
+                height={400}
+                className="object-cover w-full h-auto rounded-lg"
+              />
+            ) : (
+              <video
+                src={item.src}
+                controls
+                className="w-full h-auto rounded-lg"
+              />
+            )}
+          </motion.div>
+        ))}
+      </Masonry>
 
       {/* Show More Button */}
       <div className="flex justify-center mt-6">

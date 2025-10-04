@@ -7,6 +7,7 @@ import { Gallery } from "./Gallery/gallery";
 import WhoAreWe from "./WhoAreWe";
 import { Footer } from "./footer/footer";
 import OurDepartment from "./OurDepartment";
+import { FeedbackForm } from "./Feedback/feedback";
 import OurLocation from "./OurLocation";
 import OurSpecialists from "./OurSpecialists";
 import Partner from "./Partner";
@@ -21,7 +22,10 @@ export default function Home() {
       <Partner />
       <OurSpecialists />
       <Gallery />
+
+      <FeedbackForm/>
       <OurLocation />
+
       <Footer />
     </div>
   );
