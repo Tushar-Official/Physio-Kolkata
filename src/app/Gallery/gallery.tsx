@@ -72,7 +72,11 @@ export const Gallery = () => {
         className="flex w-auto gap-6"
         columnClassName="bg-clip-padding"
       >
-        {visibleMedia.map((item: any) => (
+        {visibleMedia.map((item : {
+    id: number;
+    type: string;
+    src: string;
+}) => (
           <motion.div
             key={item.id}
             initial={{ opacity: 0, y: 30 }}
