@@ -5,6 +5,7 @@ import { Gallery } from "./Gallery/gallery";
 import WhoAreWe from "./WhoAreWe";
 import { Footer } from "./footer/footer";
 import OurDepartment from "./OurDepartment";
+import { FeedbackForm } from "./Feedback/feedback";
 export default function Home() {
   return (
     <div className=" flex flex-col">
@@ -14,6 +15,7 @@ export default function Home() {
       <WhoAreWe />
       <OurDepartment />
       <Gallery />
+      <FeedbackForm/>
       <Footer />
     </div>
   );
