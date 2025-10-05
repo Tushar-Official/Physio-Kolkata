@@ -32,7 +32,7 @@ export default function TopSectionCard() {
                rounded-3xl shadow-2xl hover:scale-105 transition-transform duration-300 animate-flicker"
   >
     <a
-       href="https://wa.me/1234567890"
+       href=" https://chat.whatsapp.com/L3wKjwu7pEr0toka1buPd1?mode=ems_share_t"
       target="_blank"
       rel="noopener noreferrer"
       className="flex items-center justify-center w-full"

@@ -11,7 +11,6 @@ export const galleryData = [
   { id: 10, type: "image", src: "/galleryImages/doc3.jpeg" },
   { id: 11, type: "image", src: "/galleryImages/doc4.jpeg" },
   { id: 12, type: "image", src: "/galleryImages/doctors2.jpeg" },
-  { id: 13, type: "video", src: "/galleryImages/excersice.mp4" },
   { id: 14, type: "image", src: "/galleryImages/girl.jpeg" },
   { id: 15, type: "image", src: "/galleryImages/knee.jpeg" },
   { id: 16, type: "image", src: "/galleryImages/machine.jpeg" },

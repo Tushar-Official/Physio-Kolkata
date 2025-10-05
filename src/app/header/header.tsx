@@ -69,7 +69,7 @@ export default function Example() {
             <div className="hidden sm:flex items-center">
               <Button className="flex h-12 items-center p-2 border border-gray-200 rounded-xl hover:bg-white/10 transition">
                 <a
-                  href="https://wa.me/1234567890"
+                  href=" https://chat.whatsapp.com/L3wKjwu7pEr0toka1buPd1?mode=ems_share_t"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center"
@@ -99,7 +99,7 @@ export default function Example() {
 
           {/* Mobile Contact button */}
           <a 
-  href="https://chat.whatsapp.com/L3wKjwu7pEr0toka1buPd1?mode=ems_share_t" 
+  href=" https://chat.whatsapp.com/L3wKjwu7pEr0toka1buPd1?mode=ems_share_t" 
   target="_blank" 
   rel="noopener noreferrer"
 >
