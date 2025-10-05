@@ -98,10 +98,16 @@ export default function Example() {
           ))}
 
           {/* Mobile Contact button */}
-          <Button className="flex w-full justify-center items-center gap-2 border border-gray-200 rounded-lg p-2 mt-3 hover:bg-white/10">
-            <FaWhatsapp className="text-green-400 w-6 h-6" />
-            <p className="text-white text-lg">Contact Us</p>
-          </Button>
+          <a 
+  href="https://chat.whatsapp.com/L3wKjwu7pEr0toka1buPd1?mode=ems_share_t" 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  <Button className="flex w-full justify-center items-center gap-2 border border-gray-200 rounded-lg p-2 mt-3 hover:bg-white/10">
+    <FaWhatsapp className="text-green-400 w-6 h-6" />
+    <p className="text-white text-lg">Contact Us</p>
+  </Button>
+</a>
         </div>
       </DisclosurePanel>
     </Disclosure>

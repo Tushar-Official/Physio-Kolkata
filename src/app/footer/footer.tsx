@@ -49,7 +49,7 @@ export const Footer = () => {
             <a href="http://www.linkedin.com/in/physio-kolkata-aa67b6388" className="hover:text-white">
               <FaLinkedinIn />
             </a>
-            <a href="#" className="hover:text-white">
+            <a href=" https://chat.whatsapp.com/L3wKjwu7pEr0toka1buPd1?mode=ems_share_t" className="hover:text-white">
               <FaWhatsapp />
             </a>
           </div>
