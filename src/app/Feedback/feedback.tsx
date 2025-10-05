@@ -24,14 +24,13 @@ export const FeedbackForm = () => {
     <div className="p-6 to-eagle-green-800 min-h-[80vh] flex flex-col items-center justify-center">
       
       {/* New Heading Section */}
-      <motion.p
+     <motion.p
   initial={{ opacity: 0, y: -20 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.6 }}
-  className="text-3xl text-black/90 whitespace-nowrap text-center leading-relaxed mb-10 font-serif"
+  className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-black/90 whitespace-nowrap text-center leading-relaxed mb-6 sm:mb-8 md:mb-10 font-serif"
 >
   Please fill the feedback form
- 
 </motion.p>
 
       {/* Feedback Form */}

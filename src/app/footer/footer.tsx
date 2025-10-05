@@ -40,13 +40,13 @@ export const Footer = () => {
 
           {/* Social Icons */}
           <div className="flex gap-4 mt-6 text-xl">
-            <a href="#" className="hover:text-white">
+            <a href="https://www.facebook.com/share/17KLsCUbDJ/" className="hover:text-white">
               <FaFacebookF />
             </a>
-            <a href="#" className="hover:text-white">
+            <a href="https://www.instagram.com/physiokolkata2024" className="hover:text-white">
               <FaInstagram />
             </a>
-            <a href="#" className="hover:text-white">
+            <a href="http://www.linkedin.com/in/physio-kolkata-aa67b6388" className="hover:text-white">
               <FaLinkedinIn />
             </a>
             <a href="#" className="hover:text-white">

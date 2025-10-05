@@ -11,6 +11,8 @@ import { FeedbackForm } from "./Feedback/feedback";
 import OurLocation from "./OurLocation";
 import OurSpecialists from "./OurSpecialists";
 import Partner from "./Partner";
+
+import ReviewCarouselHome from "./Reviews/index";
 export default function Home() {
   return (
     <div className=" flex flex-col">
@@ -25,6 +27,7 @@ export default function Home() {
       <Gallery />
 
       <FeedbackForm/>
+      <ReviewCarouselHome/>
      
 
       <Footer />
