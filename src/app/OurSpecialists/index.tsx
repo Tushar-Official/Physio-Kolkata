@@ -7,7 +7,7 @@ const SpecialistsDetails = [
     image: "/Specialists/specialists-one.png",
     name: "Dr. Ravikant Singh",
     details:
-      "Ravikant Singh is the founder and chief Physiotherapist with over 15 +  years of experience in the field . He previously served as a HOD at Fortis hospital , kolkata . He is expertise in pain management , assessment and evaluation of patient , Manual therapy . Dr Ravi brings skill and experience to every treatment plans , ensuring best outcome from the patient",
+      "Ravikant Singh is the founder and chief Physiotherapist with over 15+ years of experience in the field. He previously served as a HOD at Fortis Hospital, Kolkata. He is expertise in pain management, assessment and evaluation of patient, Manual therapy. Dr Ravi brings skill and experience to every treatment plan, ensuring best outcome for the patient.",
   },
   {
     image: "/Specialists/specialists-two.png",
@@ -19,22 +19,23 @@ const SpecialistsDetails = [
 
 const OurSpecialists = () => {
   return (
-    <section className="flex flex-col my-20">
-      {/* <div className="mb-16 w-[1125px] mx-auto">
-        <h2 className="text-black inria-serif-bold text-[32px]">
-          We offer a comprehensive range of services designed to meet
-          <br />
-          <span className="text-eagle-green-950 inria-serif-bold">
-            the diverse needs of our patients.
-          </span>
+    <section className="flex flex-col my-16 px-4 sm:px-8 lg:px-20">
+      {/* Heading */}
+      <div className="mb-10 text-center">
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-eagle-green-950">
+          Our Specialists
         </h2>
-      </div> */}
-      <div className="flex flex-row w-full overflow-y-scroll hide-scrollbar">
-        <div className="flex flex-row pb-5">
-          {SpecialistsDetails.map((item, index) => (
-            <Card key={index} {...item} />
-          ))}
-        </div>
+        <p className="text-gray-600 mt-2 text-sm sm:text-base">
+          Meet our experienced team of physiotherapists who bring skill and
+          compassion to every treatment plan.
+        </p>
+      </div>
+
+      {/* Cards Layout */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 justify-items-center">
+        {SpecialistsDetails.map((item, index) => (
+          <Card key={index} {...item} />
+        ))}
       </div>
     </section>
   );

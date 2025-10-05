@@ -106,8 +106,9 @@ const DepertmentDetails = [
 const OurDepartment = () => {
   return (
     <section className="flex flex-col my-20">
-      <div className="mb-16 w-[1125px] mx-auto">
-        <h2 className="text-black inria-serif-bold text-[32px]">
+      {/* Heading */}
+      <div className="mb-10 w-full max-w-[1125px] mx-auto px-4 text-center md:text-left">
+        <h2 className="text-black inria-serif-bold text-2xl md:text-[32px] leading-snug">
           We offer a comprehensive range of services designed to meet
           <br />
           <span className="text-eagle-green-950 inria-serif-bold">
@@ -115,8 +116,11 @@ const OurDepartment = () => {
           </span>
         </h2>
       </div>
-      <div className="flex flex-row w-full overflow-y-scroll hide-scrollbar">
-        <div className="flex flex-row pb-5">
+
+      {/* Cards */}
+      <div className="w-full">
+        {/* Mobile → Horizontal Scroll, Desktop → Grid */}
+        <div className="flex flex-row gap-6 w-full overflow-x-auto hide-scrollbar px-4 lg:grid lg:grid-cols-3 lg:gap-8 lg:overflow-visible">
           {DepertmentDetails.map((item, index) => (
             <Card key={index} {...item} />
           ))}
@@ -127,3 +131,4 @@ const OurDepartment = () => {
 };
 
 export default OurDepartment;
+
