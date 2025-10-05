@@ -24,6 +24,11 @@ export default function TopSectionCard() {
   return (
     <div className="p-6 sm:p-12">
       {/* Heading */}
+       <div className="mt-6 flex justify-center text-center">
+        <h1 className="font-bold text-black text-black sm:text-4xl lg:text-3xl  ">
+          Working with top orthopedic and neuro surgeons in town
+        </h1>
+      </div>
       <div className="flex justify-center pt-8 sm:pt-12 items-center text-center">
         <p className="text-2xl sm:text-3xl lg:text-4xl font-bold">
           Visit our centers in Kolkata...
