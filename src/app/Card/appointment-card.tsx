@@ -44,9 +44,9 @@ export default function AppointmentCard({ title }: AppointmentCardProps) {
           />
 
           <input
-            type="email"
-            name="email"
-            placeholder="Your Email*"
+            type="number"
+            name="number"
+            placeholder="Your Number*"
             value={formData.email}
             onChange={handleChange}
             className="p-2 bg-white rounded-2xl"
