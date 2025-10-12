@@ -6,7 +6,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 export default function ServicesCardSection() {
   return (
-    <section className="flex flex-col w-full max-w-[1125px] mx-auto my-20 text-white">
+    <section id="Services" className="flex flex-col w-full max-w-[1125px] mx-auto my-20 text-white">
       {/* Mobile WhatsApp Button */}
 
       {/* Heading */}

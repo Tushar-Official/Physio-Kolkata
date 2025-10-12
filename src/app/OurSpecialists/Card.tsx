@@ -10,7 +10,7 @@ interface CardInterface {
 
 const Card: FC<CardInterface> = ({ image, name, details, type }) => {
   return (
-    <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 p-6 sm:p-8 lg:p-10 rounded-2xl overflow-hidden shadow-lg cursor-pointer bg-eagle-green-950 w-full lg:w-[1126px] mx-auto">
+    <div  id="Specialists" className="flex flex-col lg:flex-row gap-6 lg:gap-12 p-6 sm:p-8 lg:p-10 rounded-2xl overflow-hidden shadow-lg cursor-pointer bg-eagle-green-950 w-full lg:w-[1126px] mx-auto">
       {/* Left Section (Text) */}
       <div className="flex flex-col justify-between lg:w-1/2 text-center lg:text-left">
         <button className="mx-auto lg:mx-0 mb-4 sm:mb-6 w-[160px] sm:w-[180px] py-2 border-2 border-pale-robin-egg-blue-950 rounded-lg text-white text-sm sm:text-base">

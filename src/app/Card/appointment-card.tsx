@@ -58,7 +58,7 @@ export default function AppointmentCard({ title }: AppointmentCardProps) {
             placeholder="Your Name*"
             value={formData.name}
             onChange={handleChange}
-            className="p-2 bg-white rounded-xl placeholder-black"
+            className="p-2 bg-white rounded-2xl text-black"
             required
           />
 
@@ -68,7 +68,7 @@ export default function AppointmentCard({ title }: AppointmentCardProps) {
             placeholder="Your Number*"
             value={formData.number}
             onChange={handleChange}
-            className="p-2 bg-white rounded-xl placeholder-black"
+            className="p-2 bg-white rounded-2xl text-black"
             required
           />
 
@@ -77,7 +77,7 @@ export default function AppointmentCard({ title }: AppointmentCardProps) {
             placeholder="Your Message*"
             value={formData.message}
             onChange={handleChange}
-            className="p-2 bg-white rounded-xl placeholder-black"
+            className="p-2 bg-white rounded-2xl text-black"
             required
           />
 

@@ -8,15 +8,16 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { FaWhatsapp } from "react-icons/fa";
 import logo from "../utils/images/logo.png";
 import Image from "next/image";
+import Link from "next/link";
 
 const navigation = [
-  { name: "Home", href: "#", current: false },
-  { name: "About", href: "#", current: false },
-  { name: "Services", href: "#", current: false },
-  { name: "Specialists", href: "#", current: false },
-  { name: "Gallery", href: "#", current: false },
-  { name: "Testimonials", href: "#", current: false },
-  { name: "Contact", href: "#", current: false },
+  { name: "Home", href: "#Home", current: false },
+  { name: "About", href: "#About", current: false },
+  { name: "Services", href: "#Services", current: false },
+  { name: "Specialists", href: "#Specialists", current: false },
+  { name: "Gallery", href: "#Gallery", current: false },
+  { name: "Reviews", href: "#Reviews", current: false },
+  { name: "Contact", href: "#Contact", current: false },
 ];
 
 export default function Header() {
@@ -49,14 +50,14 @@ export default function Header() {
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-8">
                 {navigation.map((item) => (
-                  <a
+                  <Link
                     key={item.name}
                     href={item.href}
                     aria-current={item.current ? "page" : undefined}
                     className="text-white text-lg font-medium hover:text-gray-300 transition-colors"
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>

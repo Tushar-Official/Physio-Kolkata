@@ -10,7 +10,7 @@ const WhoAreWe = () => {
   const [accordianData, setAccordianData] = useState(0);
 
   return (
-    <section className="flex flex-col w-full max-w-[1125px] mx-auto my-20 px-4 sm:px-6 lg:px-0">
+    <section id="About" className="flex flex-col w-full max-w-[1125px] mx-auto my-20 px-4 sm:px-6 lg:px-0">
       <div className="mb-16 text-center lg:text-left">
         <h2 className="text-black inria-serif-bold text-[28px] sm:text-3xl md:text-4xl leading-snug">
           We are a team of dedicated professionals committed to providing

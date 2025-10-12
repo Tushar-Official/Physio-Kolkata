@@ -1,6 +1,6 @@
 export default function TopSectionText() {
   return (
-    <section className="flex flex-col md:flex-row w-full max-w-[1125px] mx-auto my-20 px-4 sm:px-6 lg:px-0 gap-20">
+    <section id="Home" className="flex flex-col md:flex-row w-full max-w-[1125px] mx-auto my-20 px-4 sm:px-6 lg:px-0 gap-20">
       {/* Left Section */}
       <div className="flex flex-1 py-6">
         <h2 className="text-4xl inria-serif-bold text-white leading-snug">

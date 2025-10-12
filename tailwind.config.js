@@ -5,8 +5,9 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx}",   // Next.js pages
     "./components/**/*.{js,ts,jsx,tsx}"
   ],
-  theme: {
-    extend: {},
+   theme: {
+    extend: {
+    },
   },
   plugins: [],
 }

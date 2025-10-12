@@ -19,7 +19,7 @@ export const Gallery = () => {
   };
 
   return (
-    <div className="p-6 bg-eagle-green-950">
+    <div id="Gallery" className="p-6 bg-eagle-green-950">
       <div className="pt-12 pb-12 flex justify-center">
        <motion.p
         initial={{ opacity: 0, y: -20 }}

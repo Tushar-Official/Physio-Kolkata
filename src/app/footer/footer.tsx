@@ -6,15 +6,16 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 import logo from "../utils/images/logo.png";
+import Link from "next/link";
 
 export const Footer = () => {
   const navigation = [
-    { name: "About", href: "#" },
-    { name: "Service", href: "#" },
-    { name: "Specialists", href: "#" },
-    { name: "Gallery", href: "#" },
-    { name: "Testimonials", href: "#" },
-    { name: "Contact", href: "#" },
+    { name: "About", href: "#About" },
+    { name: "Service", href: "#Service" },
+    { name: "Specialists", href: "#Specialists" },
+    { name: "Gallery", href: "#Gallery" },
+    { name: "Review", href: "#Review" },
+    { name: "Contact", href: "#Contact" },
   ];
 
   return (
@@ -61,12 +62,12 @@ export const Footer = () => {
           <ul className="space-y-2">
             {navigation.map((item) => (
               <li key={item.name}>
-                <a
+                <Link
                   href={item.href}
                   className="hover:text-white transition-colors"
                 >
                   {item.name}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
