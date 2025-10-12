@@ -1,34 +1,39 @@
 export default function TopSectionText() {
   return (
-    <div className="flex flex-col lg:flex-row justify-between bg-eagle-green-950 pt-16 lg:pt-24 px-6 sm:px-12 lg:px-24 items-center text-center lg:text-left">
-      
+    <section className="flex flex-col md:flex-row w-full max-w-[1125px] mx-auto my-20 px-4 sm:px-6 lg:px-0 gap-20">
       {/* Left Section */}
-      <div className="w-full lg:w-1/2 p-6 lg:p-12">
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-white leading-snug">
+      <div className="flex flex-1 py-6">
+        <h2 className="text-4xl inria-serif-bold text-white leading-snug">
           Pain-Free Physiotherapy for Replacement Surgeries by our Team.
         </h2>
       </div>
 
       {/* Right Section */}
-      <div className="w-full lg:w-1/2 p-6 lg:p-8 flex flex-col items-center lg:items-start">
-        <div className="flex flex-col justify-center items-center lg:items-start">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-white">
+      <div className="flex py-6 flex-col items-center lg:items-start gap-2">
+        <div className="flex flex-1 flex-col justify-center items-center lg:items-start">
+          <h2 className="text-2xl inria-serif-regular text-white">
             Get back to feeling great with Physio Kolkata
           </h2>
         </div>
 
         {/* Stats Section */}
-        <div className="flex flex-col sm:flex-row justify-center lg:justify-start items-center gap-6 pt-6">
-          <div className="mx-4 text-center lg:text-left">
-            <h2 className="text-3xl sm:text-4xl text-white font-bold">2354+</h2>
-            <h4 className="text-gray-200 text-base sm:text-lg">Happy Patients</h4>
+        <div className="flex flex-1 flex-row justify-center lg:justify-start items-center gap-6 w-full">
+          <div className="flex flex-1 flex-col">
+            <h3 className="text-4xl text-white inria-serif-regular">2354+</h3>
+            <p className="text-gray-200 inria-serif-regular text-base">
+              Happy Patients
+            </p>
           </div>
-          <div className="mx-4 text-center lg:text-left">
-            <h2 className="text-3xl sm:text-4xl text-white font-bold">12 Years</h2>
-            <h4 className="text-gray-200 text-base sm:text-lg">of Experiences</h4>
+          <div className="flex flex-1 flex-col">
+            <h3 className="text-4xl text-white inria-serif-regular">
+              12 Years
+            </h3>
+            <p className="text-gray-200 inria-serif-regular text-base">
+              of Experiences
+            </p>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

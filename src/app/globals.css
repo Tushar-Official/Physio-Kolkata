@@ -1,10 +1,11 @@
 @import "tailwindcss";
 
 @theme {
-  --color-eagle-green-950: oklch(0.4278 0.0732 207.92);
-  --color-eagle-green-500: oklch(0.4225 0.0959 204.01 / 50%);
-  --color-eagle-green-100: oklch(0.4225 0.0959 204.01 / 10%);
-  --color-pale-robin-egg-blue-950: oklch(0.8508 0.1177 186.75);
+  --color-eagle-green-950: #015A64;
+  --color-eagle-green-500: #015A6480;
+  --color-eagle-green-100: #015A641A;
+  --color-pale-robin-egg-blue-950: #87E4DA;
+  --color-blue-sapphire-950: #13646D;
 }
 
 body {
@@ -15,7 +16,6 @@ body {
   font-family: "Inria Serif", serif;
   font-weight: 300;
   font-style: normal;
-  line-height: 19px;
 
 }
 
@@ -23,14 +23,12 @@ body {
   font-family: "Inria Serif", serif;
   font-weight: 400;
   font-style: normal;
-  line-height: 19px;
 }
 
 .inria-serif-bold {
   font-family: "Inria Serif", serif;
   font-weight: 700;
   font-style: normal;
-  line-height: 43px;
 }
 
 .inria-serif-light-italic {

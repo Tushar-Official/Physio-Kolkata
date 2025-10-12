@@ -10,7 +10,7 @@ interface CardInterface {
 
 const Card: FC<CardInterface> = ({ image, name, title, description }) => {
   return (
-    <div className="flex flex-row ml-4 sm:ml-6 flex-shrink-0 w-full max-w-[320px] sm:max-w-[359px] rounded-2xl overflow-hidden shadow-lg relative h-auto min-h-[420px] cursor-pointer">
+    <div className="flex flex-row flex-shrink-0 w-full max-w-[320px] sm:max-w-[359px] rounded-2xl overflow-hidden shadow-lg relative h-auto min-h-[420px] cursor-pointer">
       <Image
         className="w-full h-full object-cover"
         src={image}

@@ -6,10 +6,8 @@ import { FaWhatsapp } from "react-icons/fa";
 
 export default function ServicesCardSection() {
   return (
-    <div className="pb-12 px-4 flex flex-col justify-between items-center gap-12 ">
-      
+    <section className="flex flex-col w-full max-w-[1125px] mx-auto my-20 text-white">
       {/* Mobile WhatsApp Button */}
-      
 
       {/* Heading */}
       <div className="text-center mt-10">
@@ -22,20 +20,20 @@ export default function ServicesCardSection() {
       </div>
 
       {/* Image and Appointment Card */}
-      <div className="flex flex-col md:flex-row items-center justify-center gap-8 mt-8 w-full max-w-5xl">
-        <div className="w-full md:w-1/2">
+      <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 w-full mt-16">
+        <div className="flex flex-1">
+          <AppointmentCard title="Make your Appointment for Tele - Rehabilitation" />
+        </div>
+        <div className="h-full flex flex-1">
           <Image
             src={teleRehabImage}
             alt="Tele Rehabilitation"
             width={500}
             height={400}
-            className="rounded-lg shadow-lg"
+            className="w-full rounded-lg object-fill"
           />
         </div>
-        <div className="w-full md:w-1/2">
-          <AppointmentCard title="Make your Appointment for Tele - Rehabilitation" />
-        </div>
       </div>
-    </div>
+    </section>
   );
 }
