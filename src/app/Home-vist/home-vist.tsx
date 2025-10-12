@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function HomeVisitCard() {
   return (
-    <section className="flex flex-col w-full max-w-[1125px] mx-auto my-20">
+    <section className="flex flex-col w-full max-w-[1125px] mx-auto my-20 px-4 sm:px-6 lg:px-0">
       {/* Heading */}
       {/* <div className="flex flex-col justify-center gap-y-4 items-center text-center p-6 sm:p-12">
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold">

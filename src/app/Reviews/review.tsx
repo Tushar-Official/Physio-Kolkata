@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { FaStar } from "react-icons/fa";
 import { IoChevronBack, IoChevronForward } from "react-icons/io5";
-import { useRouter } from "next/navigation";
+import useMediaQuery from "../hooks/useMediaQuery";
 
 interface Review {
   name: string;
@@ -78,7 +78,7 @@ const reviews: Review[] = [
     rating: 5,
     time: "9 months ago",
   },
- {
+  {
     name: "Archana Singh",
     text: "Absolutely loved the experience! The team was professional, responsive, and delivered exactly what I wanted on time. Highly recommended!",
     rating: 5,
@@ -107,14 +107,19 @@ const reviews: Review[] = [
 export default function ReviewCarousel() {
   const [index, setIndex] = useState(0);
   const [expanded, setExpanded] = useState<number | null>(null);
-  const router = useRouter();
+  const isMobile = useMediaQuery("(max-width: 640px)");
+
+  const getReviewCount = () => {
+    return isMobile ? 1 : 2;
+  };
 
   const nextSlide = () => {
-    if (index + 2 < reviews.length) setIndex(index + 2);
+    if (index + getReviewCount() < reviews.length)
+      setIndex(index + getReviewCount());
   };
 
   const prevSlide = () => {
-    if (index > 0) setIndex(index - 2);
+    if (index > 0) setIndex(index - getReviewCount());
   };
 
   return (
@@ -124,7 +129,7 @@ export default function ReviewCarousel() {
       </h2>
 
       <div className="flex justify-center gap-6 overflow-hidden transition-all">
-        {reviews.slice(index, index + 2).map((review, i) => (
+        {reviews.slice(index, index + getReviewCount()).map((review, i) => (
           <div
             key={i}
             className="bg-white flex flex-col justify-between p-6 rounded-2xl shadow-lg w-full sm:w-[45%] min-h-[330px] hover:shadow-2xl transition-all duration-300"
@@ -135,9 +140,7 @@ export default function ReviewCarousel() {
                   <FaStar
                     key={idx}
                     className={`${
-                      idx < review.rating
-                        ? "text-yellow-400"
-                        : "text-gray-300"
+                      idx < review.rating ? "text-yellow-400" : "text-gray-300"
                     } mr-1`}
                   />
                 ))}
@@ -166,9 +169,7 @@ export default function ReviewCarousel() {
 
             <div className="mt-6 flex justify-between items-center">
               <div>
-                <h4 className="font-semibold text-gray-800">
-                  {review.name}
-                </h4>
+                <h4 className="font-semibold text-gray-800">{review.name}</h4>
                 <p className="text-xs text-gray-500">{review.time}</p>
               </div>
             </div>
@@ -194,14 +195,14 @@ export default function ReviewCarousel() {
 
       {/* “View All Reviews” button */}
       <div className="flex justify-center mt-10">
-       <a
-  href="https://www.google.com/maps/place/PHYSIO+CENTRE/@22.5316117,88.3648563,17z/data=!4m18!1m9!3m8!1s0x3a0277b5fd9b2153:0x43ad061e39c9921e!2sPHYSIO+CENTRE!8m2!3d22.5316117!4d88.3648563!9m1!1b1!16s%2Fg%2F11lyrdmwl3!3m7!1s0x3a0277b5fd9b2153:0x43ad061e39c9921e!8m2!3d22.5316117!4d88.3648563!9m1!1b1!16s%2Fg%2F11lyrdmwl3?entry=ttu&g_ep=EgoyMDI1MTAwMS4wIKXMDSoASAFQAw%3D%3D"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-full shadow-md hover:bg-blue-700 transition-all duration-300"
->
-  View All Reviews
-</a>
+        <a
+          href="https://www.google.com/maps/place/PHYSIO+CENTRE/@22.5316117,88.3648563,17z/data=!4m18!1m9!3m8!1s0x3a0277b5fd9b2153:0x43ad061e39c9921e!2sPHYSIO+CENTRE!8m2!3d22.5316117!4d88.3648563!9m1!1b1!16s%2Fg%2F11lyrdmwl3!3m7!1s0x3a0277b5fd9b2153:0x43ad061e39c9921e!8m2!3d22.5316117!4d88.3648563!9m1!1b1!16s%2Fg%2F11lyrdmwl3?entry=ttu&g_ep=EgoyMDI1MTAwMS4wIKXMDSoASAFQAw%3D%3D"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-full shadow-md hover:bg-blue-700 transition-all duration-300"
+        >
+          View All Reviews
+        </a>
       </div>
     </div>
   );

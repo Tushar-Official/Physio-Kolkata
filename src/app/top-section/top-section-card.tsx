@@ -6,11 +6,14 @@ import { FaWhatsapp } from "react-icons/fa";
 
 export default function TopSectionCard() {
   return (
-    <section id="Contact" className="flex flex-col w-full max-w-[1125px] mx-auto my-20 text-white">
+    <section
+      id="Contact"
+      className="flex flex-col w-full max-w-[1125px] mx-auto my-20 px-4 sm:px-6 lg:px-0 text-white"
+    >
       {/* Mobile WhatsApp Button */}
-      <div className="flex sm:hidden w-full mb-6">
+      <div className="flex sm:hidden w-full mb-6 justify-center">
         <Button
-          className="w-11/12 flex justify-center p-4 bg-gradient-to-r from-green-400 via-green-500 to-green-600
+          className="w-11/12 flex p-4 bg-gradient-to-r from-green-400 via-green-500 to-green-600
                rounded-3xl shadow-2xl hover:scale-105 transition-transform duration-300 animate-flicker"
         >
           <a
