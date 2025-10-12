@@ -19,15 +19,11 @@ const navigation = [
   { name: "Contact", href: "#", current: false },
 ];
 
-export default function Example() {
+export default function Header() {
   return (
-    <Disclosure
-      as="nav"
-      className="relative bg-eagle-green-950 pt-4 sm:pt-6"
-    >
+    <Disclosure as="nav" className="relative bg-eagle-green-950 pt-4 sm:pt-6">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
-
           {/* Mobile menu button */}
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-white focus:outline-none focus:ring-2 focus:ring-white">
@@ -98,16 +94,16 @@ export default function Example() {
           ))}
 
           {/* Mobile Contact button */}
-          <a 
-  href=" https://chat.whatsapp.com/L3wKjwu7pEr0toka1buPd1?mode=ems_share_t" 
-  target="_blank" 
-  rel="noopener noreferrer"
->
-  <Button className="flex w-full justify-center items-center gap-2 border border-gray-200 rounded-lg p-2 mt-3 hover:bg-white/10">
-    <FaWhatsapp className="text-green-400 w-6 h-6" />
-    <p className="text-white text-lg">Contact Us</p>
-  </Button>
-</a>
+          <a
+            href=" https://chat.whatsapp.com/L3wKjwu7pEr0toka1buPd1?mode=ems_share_t"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button className="flex w-full justify-center items-center gap-2 border border-gray-200 rounded-lg p-2 mt-3 hover:bg-white/10">
+              <FaWhatsapp className="text-green-400 w-6 h-6" />
+              <p className="text-white text-lg">Contact Us</p>
+            </Button>
+          </a>
         </div>
       </DisclosurePanel>
     </Disclosure>

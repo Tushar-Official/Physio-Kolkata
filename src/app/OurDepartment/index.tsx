@@ -118,7 +118,7 @@ const OurDepartment = () => {
       </div>
 
       {/* Cards */}
-      <div className="w-full">
+      <div className="w-full max-w-[1125px] mx-auto">
         {/* Mobile → Horizontal Scroll, Desktop → Grid */}
         <div className="flex flex-row gap-6 w-full overflow-x-auto hide-scrollbar px-4 lg:grid lg:grid-cols-3 lg:gap-8 lg:overflow-visible">
           {DepertmentDetails.map((item, index) => (
@@ -131,4 +131,3 @@ const OurDepartment = () => {
 };
 
 export default OurDepartment;
-
