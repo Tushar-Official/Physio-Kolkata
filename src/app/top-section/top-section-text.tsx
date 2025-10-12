@@ -1,6 +1,9 @@
 export default function TopSectionText() {
   return (
-    <section id="Home" className="flex flex-col md:flex-row w-full max-w-[1125px] mx-auto my-20 px-4 sm:px-6 lg:px-0 gap-20">
+    <section
+      id="Home"
+      className="flex flex-col md:flex-row w-full max-w-[1125px] mx-auto my-20 px-4 sm:px-6 lg:px-0 gap-20"
+    >
       {/* Left Section */}
       <div className="flex flex-1 py-6">
         <h2 className="text-4xl inria-serif-bold text-white leading-snug">
@@ -9,8 +12,8 @@ export default function TopSectionText() {
       </div>
 
       {/* Right Section */}
-      <div className="flex py-6 flex-col items-center lg:items-start gap-2">
-        <div className="flex flex-1 flex-col justify-center items-center lg:items-start">
+      <div className="flex py-6 flex-col items-start gap-2">
+        <div className="flex flex-1 flex-col justify-center items-start">
           <h2 className="text-2xl inria-serif-regular text-white">
             Get back to feeling great with Physio Kolkata
           </h2>

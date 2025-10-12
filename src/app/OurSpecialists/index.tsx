@@ -17,6 +17,24 @@ const SpecialistsDetails = [
     details:
       "Sworna Prava Lenka is the Chief Physiotherapist with over 8 years of experience in the field. She previously served as a Consultant at Fortis Hospital, Kolkata, where she honed her expertise in providing exceptional care. With a commitment to improving patient outcomes, Sworna brings both skill and compassion to every treatment plan, ensuring the best possible results for her patients.",
   },
+  {
+    image: "/Specialists/specialists-three.png",
+    name: "Nihal Kumar",
+    type: "Our Specialists",
+    details:
+      "Nihal Kumar is a dedicated and compassionate physiotherapist committed to helping individuals recover from injury, improve mobility, and achieve a better quality of life. With a strong foundation in evidence-based practice and a patient-centered approach, Nihal works closely with clients to create customized treatment plans that address their unique needs and goals.",
+  },
+  {
+    image: [
+      "/Specialists/team-one.png",
+      "/Specialists/team-two.png",
+      "/Specialists/team-three.png",
+      "/Specialists/team-four.png",
+    ],
+    name: "",
+    type: "Our Team",
+    details: "",
+  },
 ];
 
 const OurSpecialists = () => {
