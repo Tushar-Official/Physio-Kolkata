@@ -7,7 +7,6 @@ import { FaWhatsapp } from "react-icons/fa";
 export default function TopSectionCard() {
   return (
     <section
-      id="Contact"
       className="flex flex-col w-full max-w-[1125px] mx-auto my-20 px-4 sm:px-6 lg:px-0 text-white"
     >
       {/* Mobile WhatsApp Button */}

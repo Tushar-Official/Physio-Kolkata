@@ -11,7 +11,8 @@ import Link from "next/link";
 export const Footer = () => {
   const navigation = [
     { name: "About", href: "#About" },
-    { name: "Services", href: "#Services" },
+    { name: "TeleRehab", href: "#TeleRehab" },
+     { name: "Services", href: "#Services" },
     { name: "Specialists", href: "#Specialists" },
     { name: "Gallery", href: "#Gallery" },
     { name: "Reviews", href: "#Reviews" },
@@ -19,7 +20,7 @@ export const Footer = () => {
   ];
 
   return (
-    <footer className="bg-eagle-green-950 text-gray-300">
+    <footer id="Contact" className="bg-eagle-green-950 text-gray-300">
       <div className="max-w-7xl mx-auto px-6 py-10 grid md:grid-cols-3 gap-10">
         {/* Left Section */}
         <div>
