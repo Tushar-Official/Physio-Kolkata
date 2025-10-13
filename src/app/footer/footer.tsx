@@ -11,10 +11,10 @@ import Link from "next/link";
 export const Footer = () => {
   const navigation = [
     { name: "About", href: "#About" },
-    { name: "Service", href: "#Service" },
+    { name: "Services", href: "#Services" },
     { name: "Specialists", href: "#Specialists" },
     { name: "Gallery", href: "#Gallery" },
-    { name: "Review", href: "#Review" },
+    { name: "Reviews", href: "#Reviews" },
     { name: "Contact", href: "#Contact" },
   ];
 
