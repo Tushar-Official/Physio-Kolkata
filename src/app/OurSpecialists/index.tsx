@@ -5,24 +5,24 @@ import Card from "./Card";
 const SpecialistsDetails = [
   {
     image: "/Specialists/specialists-one.png",
-    name: "Dr. Ravikant Singh",
+    name: "Dr. Ravikant Singh PT",
     type: "Our Specialists",
     details:
       "Ravikant Singh is the founder and chief Physiotherapist with over 15+ years of experience in the field. He previously served as a HOD at Fortis Hospital, Kolkata. He is expertise in pain management, assessment and evaluation of patient, Manual therapy. Dr Ravi brings skill and experience to every treatment plan, ensuring best outcome for the patient.",
   },
   {
     image: "/Specialists/specialists-two.png",
-    name: "Dr. Sworna Prava Lenka",
+    name: "Dr. Sworna Prava Lenka PT",
     type: "Our Specialists",
     details:
       "Sworna Prava Lenka is the Chief Physiotherapist with over 8 years of experience in the field. She previously served as a Consultant at Fortis Hospital, Kolkata, where she honed her expertise in providing exceptional care. With a commitment to improving patient outcomes, Sworna brings both skill and compassion to every treatment plan, ensuring the best possible results for her patients.",
   },
   {
     image: "/Specialists/specialists-three.png",
-    name: "Nihal Kumar",
+    name: "Dr. Nihal PT",
     type: "Our Specialists",
     details:
-      "Nihal Kumar is a dedicated and compassionate physiotherapist committed to helping individuals recover from injury, improve mobility, and achieve a better quality of life. With a strong foundation in evidence-based practice and a patient-centered approach, Nihal works closely with clients to create customized treatment plans that address their unique needs and goals.",
+      "Dr Nihal is the Co - founder and Sports Physiotherapist . He is also the certified Exercise Physiologist with 5 years of experience in the field . He has previously served as a consultant at Fortis Hospital , Kolkata . He has represented as a Sports Physiotherapist at many Big tournaments and is registered physiotherapist at AIFF ( All India Football Federation ). He has honed his expertise in manual therapy and evidence based practice . He accurately evaluate and identify sports related injuries and provide athlete centered care . Nihal brings both Physiotherapy and sports sciences to plan treatment , rehabilitation and ensure best plans for athletes and patient.",
   },
   {
     image: [
@@ -52,8 +52,8 @@ const OurSpecialists = () => {
       </div>
 
       {/* Cards Layout */}
-      <div className="flex flex-row overflow-scroll hide-scrollbar px-4 sm:px-8">
-        <div className="flex flex-col lg:flex-row gap-8">
+      <div className="flex flex-col px-4 sm:px-8">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
           {SpecialistsDetails.map((item, index) => (
             <Card key={index} {...item} />
           ))}

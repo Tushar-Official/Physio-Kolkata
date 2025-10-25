@@ -27,7 +27,7 @@ export async function sendMail({
 }: {
   sendTo?: string;
   subject?: string;
-  payload: {
+  payload?: {
     name: string | undefined;
     number: string | undefined;
     message: string | null;
@@ -48,11 +48,11 @@ export async function sendMail({
     return;
   }
   const boday = `Hi,\nI am ${
-    payload.name
-  }. I want to ${payload.title.toLowerCase()}. Booking information below,\nName: ${
-    payload.name
-  }\nPhone Number: ${payload.number}\nLocation: ${payload.title}\nMessage: ${
-    payload.message
+    payload?.name
+  }. I want to ${payload?.title.toLowerCase()}. Booking information below,\nName: ${
+    payload?.name
+  }\nPhone Number: ${payload?.number}\nLocation: ${payload?.title}\nMessage: ${
+    payload?.message
   }`;
   const info = await transporter.sendMail({
     from: SITE_MAIL_RECIEVER,

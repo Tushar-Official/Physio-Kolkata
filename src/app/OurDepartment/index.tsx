@@ -11,14 +11,14 @@ const DepertmentDetails = [
       "Focuses on restoring function, strength, and mobility after musculoskeletal injuries or surgeries.",
   },
   {
-    image: "/DepartmentImages/image-two.jpg",
+    image: "/DepartmentImages/image-two.jpeg", // fixed
     name: "Neurological",
     title: "Neurological rehabilitation",
     description:
       "A specialized therapy aimed at improving function for individuals with nervous system disorders.",
   },
   {
-    image: "/DepartmentImages/image-three.jpg",
+    image: "/DepartmentImages/image-three.jpeg", // fixed
     name: "Sports",
     title: "Sports physiotherapy",
     description:
@@ -32,14 +32,14 @@ const DepertmentDetails = [
       "Pediatric rehabilitation focuses on helping children recover from injuries, illnesses, or congenital conditions.",
   },
   {
-    image: "/DepartmentImages/image-five.jpg",
+    image: "/DepartmentImages/image-five.jpeg", // fixed
     name: "Post Surgical",
     title: "Cupping & Kinesio Taping",
     description:
       "Traditional therapy that involves placing suction cups on the skin to improve blood flow, reduce muscle tension.",
   },
   {
-    image: "/DepartmentImages/image-six.jpg",
+    image: "/DepartmentImages/image-six.jpeg",
     name: "Pulmo Rehab",
     title: "Joint Mobilization",
     description:
@@ -53,7 +53,7 @@ const DepertmentDetails = [
       "Specialized care aimed at improving mobility, balance, and overall function in older adults.",
   },
   {
-    image: "/DepartmentImages/image-eight.jpg",
+    image: "/DepartmentImages/image-eight.jpeg",
     name: "Spine Fitness",
     title: "Pain Management",
     description:
@@ -62,42 +62,42 @@ const DepertmentDetails = [
   {
     image: "/DepartmentImages/image-nine.jpg",
     name: "Cupping",
-    title: "Orthopedic Rehabilitation",
+    title: "Cupping Rehabilitation",
     description:
       "Focuses on restoring function, strength, and mobility after musculoskeletal injuries or surgeries.",
   },
   {
-    image: "/DepartmentImages/image-six.jpg",
-    name: "Vestibule",
-    title: "Orthopedic Rehabilitation",
+    image: "/DepartmentImages/image-ten.jpeg",
+    name: "Joint Mobilization & Manipulation",
+    title: "Joint Mobilization & Manipulation Rehabilitation",
     description:
       "Focuses on restoring function, strength, and mobility after musculoskeletal injuries or surgeries.",
   },
   {
     image: "/DepartmentImages/image-eleven.jpg",
     name: "Dry Needling",
-    title: "Orthopedic Rehabilitation",
+    title: "Dry Needling Rehabilitation",
     description:
       "Focuses on restoring function, strength, and mobility after musculoskeletal injuries or surgeries.",
   },
   {
     image: "/DepartmentImages/image-twelve.jpg",
     name: "Kinesio Taping",
-    title: "Orthopedic Rehabilitation",
+    title: "Kinesio Taping Rehabilitation",
     description:
       "Focuses on restoring function, strength, and mobility after musculoskeletal injuries or surgeries.",
   },
   {
     image: "/DepartmentImages/image-thirteen.jpg",
     name: "Advance Laser",
-    title: "Orthopedic Rehabilitation",
+    title: "Advance Laser Rehabilitation",
     description:
       "Focuses on restoring function, strength, and mobility after musculoskeletal injuries or surgeries.",
   },
   {
-    image: "/DepartmentImages/image-fourteen.jpg",
+    image: "/DepartmentImages/image-fourteen.jpeg",
     name: "Shock-wave",
-    title: "Orthopedic Rehabilitation",
+    title: "Shock-wave Rehabilitation",
     description:
       "Focuses on restoring function, strength, and mobility after musculoskeletal injuries or surgeries.",
   },

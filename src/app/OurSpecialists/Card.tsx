@@ -13,7 +13,7 @@ const Card: FC<CardInterface> = ({ image, name, details, type }) => {
   return (
     <div
       id="Specialists"
-      className="relative flex flex-col lg:flex-row gap-6 lg:gap-12 p-6 sm:p-8 lg:p-10 rounded-2xl overflow-hidden shadow-lg cursor-pointer bg-eagle-green-950 w-full lg:w-[1126px] mx-auto"
+      className="relative flex flex-col lg:flex-row flex-1 gap-6 lg:gap-12 p-4 sm:p-6 lg:p-8 rounded-2xl overflow-hidden shadow-lg cursor-pointer bg-eagle-green-950 w-full mx-auto"
     >
       {/* Left Section (Text) */}
       {typeof image === "string" && (

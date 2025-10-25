@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { CSSProperties, FC } from "react";
 import Image from "next/image";
 
 interface CardInterface {
